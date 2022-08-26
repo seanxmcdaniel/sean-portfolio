@@ -1,20 +1,17 @@
-import React, {useState} from 'react';
+import React, {useEffect} from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers'
 
-function Nav() {
+function Nav(props) {
 
-    const [categories] = useState([
-        {
-            name: 'Projects',
-            description: 'List of front end, back end, and full stack projects completed throughout my MSU coding bootcamp.'
-        },
-        {
-            name: 'Back-End Projects',
-            description: 'List of back-end projects created throughout my MSU coding bootcamp.'
-        }
-    ]);
+  const {
+    categories = [],
+    setCurrentCategory,
+    currentCategory,
+  } = props;
 
-    const [currentCategory, setCurrentCategory] = useState(categories[0]);
+  useEffect(() => {
+    document.title = capitalizeFirstLetter(currentCategory.name);
+  }, [currentCategory]);
 
     return (
       <header className="flex-row px-1">
