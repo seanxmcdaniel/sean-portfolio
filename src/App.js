@@ -8,15 +8,15 @@ function App() {
 
   const [categories] = useState([
     {
-      name: 'Front-End Projects',
+      name: 'front-end',
       description: 'A list of front end, back end, and full stack projects completed throughout my MSU coding bootcamp.'
     },
     {
-      name: 'Back-End Projects',
+      name: 'back-end',
       description: 'A list of back-end projects created throughout my MSU coding bootcamp.'
     },
     {
-      name: 'Full Stack Projects',
+      name: 'full-stack',
       description: 'A list of full stack projects I created throughout my MSU coding bootcamp. '
     }
   ]);

@@ -1,62 +1,79 @@
 import React, { useState } from 'react';
 
 const PhotoList = ({ category }) => {
+  const [photos] = useState([
+    {
+      name: 'Budget Tracker',
+      category: 'full-stack',
+      description: 'A budget tracker application that allows for offline access and functionality.',
+      tech: 'JavaScript, Node.js, Express.js, MongoDB, Mongoose',
+      link: 'https://github.com/seanxmcdaniel/budget-tracker'
+    },
+    {
+      name: 'Coding Quiz',
+      category: 'front-end',
+      description: 'A front-end coding quiz game built with HTML, CSS, and JavaScript. ',
+      tech: 'HTML, CSS, JavaScript',
+      link: 'https://seanxmcdaniel.github.io/coding-quiz/'
+    },
+    {
+      name: 'Game Time MLB',
+      category: 'front-end',
+      description: 'A front-end application that uses web APIs and local storage to show you stats and schedules for your favorite MLB teams.',
+      tech: 'HTML, CSS, JavaScript',
+      link: 'https://seanxmcdaniel.github.io/game-time-mlb/'
+    },
+    {
+      name: 'Happening Place',
+      category: 'full-stack',
+      description: 'A full-stack web application that allows a user to sign up, log in, and post upcoming events to an event blog.',
+      tech: 'HTML, CSS, JavaScript, MySQL, Express.js, Node.js, Handlebars',
+      link: 'https://salty-lowlands-78543.herokuapp.com/'
+    },
+    {
+      name: 'Note Taker',
+      category: 'full-stack',
+      description: 'A full-stack application that allows a user to post, update, and delete notes.',
+      tech: 'HTML, CSS, JavaScript, Node.js, Express.js',
+      link: 'https://github.com/seanxmcdaniel/Note-Taker'
+    },
+    {
+      name: 'Workday App',
+      category: 'front-end',
+      description: 'A front-end application that allows an employee to keep up with their work schedule.',
+      tech: 'HTML, CSS, JavaScript, JQuery, Bootstrap',
+      link: 'https://seanxmcdaniel.github.io/workday-app/'
+    }
 
-    const [photos] = useState([
-        {
-            name: 'Budget Tracker',
-            category: 'fullstack',
-            description: 'A budget tracker application that allows for offline access and functionality.'
-        },
-        {
-            name: 'Coding Quiz',
-            category: 'frontend',
-            description: 'A front-end coding quiz game built with HTML, CSS, and JavaScript. ',
-            tech: 'HTML, CSS, JavaScript'
-        },
-        {
-            name: 'Game Time MLB',
-            category: 'frontend',
-            description: 'A front-end application that uses web APIs and local storage to show you stats and schedules for your favorite MLB teams.',
-            tech: 'HTML, CSS, JavaScript'
-        },
-        {
-            name: 'Happening Place',
-            category: 'fullstack',
-            description: 'A full-stack web application that allows a user to sign up, log in, and post upcoming events to an event blog.',
-            tech: 'HTML, CSS, JavaScript, MySQL, Express.js, Node.js, Handlebars'
-        },
-        {
-            name: 'Note Taker',
-            catefory: 'fullstack',
-            description: 'A full-stack applciation that allows a use to post, update, and delete notes.',
-            tech: 'HTML, CSS, JavaScript, Node.js, Express.js'
-        },
-        {
-            name: 'Workday App',
-            category: 'frontend',
-            description: 'A front-end application that allows an employee to keep up with their work schedule.',
-            tech: 'HTML, CSS, JavaScript, JQuery, Bootstrap'
-        }
+  ])
 
-    ])
+  const currentPhotos = photos.filter(photo => photo.category === category);
 
-    const currentPhotos = photos.filter((photo) => photo.category === category)
-
-    return (
-        <div>
-            <div className='flex-row'>
-                {photos.map((image, i) => (
-                    <img
-                    src={require(`../../assets/projects/${category}/${i}.jpg`).default}
-                    alt={image.name}
-                    className='img-thumbnail mx-1'
-                    key={image.name}
-                    />                    
-                ))}
-            </div>
-        </div>
-    )
+  return (
+    <div>
+      <div className="flex-row">
+        {currentPhotos.map((image, i) => (
+          <div className='ol-container'>
+            <img
+              src={require(`../../assets/projects/${category}/${i}.png`)}
+              alt={image.name}
+              className="img-thumbnail"
+              key={image.name}
+            />
+            <a href={image.link} target="blank">
+              <div className='overlay'>
+                <div className='ol-text'>
+                  <h1>{image.name}</h1>
+                  <p>{image.description}</p>
+                  <p>{image.tech}</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default PhotoList;
