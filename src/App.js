@@ -32,7 +32,7 @@ function App() {
       >
       </Nav>
       <main>
-        <Projects></Projects>
+        <Projects currentCategory={currentCategory}></Projects>
         <About></About>
       </main>
     </div>
