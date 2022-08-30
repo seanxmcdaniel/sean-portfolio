@@ -7,16 +7,13 @@ function Nav(props) {
     categories = [],
     setCurrentCategory,
     currentCategory,
+    contactSelected,
+    setContactSelected
   } = props;
-
-  const handleClick = (item) => {
-    console.log(item);
-    return item;
-  };
 
   return (
     <header className="flex-row px-1">
-      <h2>
+      <h2 className='headername'>
         <a data-testid="link" href="/">
           Sean McDaniel
         </a>
@@ -24,12 +21,12 @@ function Nav(props) {
       <nav>
         <ul className="flex-row">
           <li className="mx-2">
-            <a data-testid="about" href="#about">
+            <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
               About Me
             </a>
           </li>
           <li className={"mx-2"}>
-            <span onClick={() => handleClick('Contact')}>
+            <span onClick={() => setContactSelected(true)}>
               Contact
             </span>
           </li>
@@ -40,13 +37,16 @@ function Nav(props) {
                 }`}
               key={category.name}
             >
+              <a href='#projects'>
               <span
                 onClick={() => {
                   setCurrentCategory(category);
+                  setContactSelected(false);
                 }}
               >
                 {capitalizeFirstLetter(category.name)}
               </span>
+              </a>
             </li>
           ))}
         </ul>

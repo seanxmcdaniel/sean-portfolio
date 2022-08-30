@@ -50,8 +50,7 @@ const PhotoList = ({ category }) => {
   const currentPhotos = photos.filter(photo => photo.category === category);
 
   return (
-    <div>
-      <div className="flex-row">
+      <div className="flex-row proj-image">
         {currentPhotos.map((image, i) => (
           <div className='ol-container'>
             <img
@@ -72,7 +71,6 @@ const PhotoList = ({ category }) => {
           </div>
         ))}
       </div>
-    </div>
   );
 };
 

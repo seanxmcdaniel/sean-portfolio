@@ -7,6 +7,8 @@ import ContactForm from './components/Contact';
 
 function App() {
 
+  const [contactSelected, setContactSelected] = useState(false);
+
   const [categories] = useState([
     {
       name: 'front-end',
@@ -30,12 +32,18 @@ function App() {
         categories={categories}
         setCurrentCategory={setCurrentCategory}
         currentCategory={currentCategory}
-      >
-      </Nav>
+        contactSelected={contactSelected}
+        setContactSelected={setContactSelected}
+      ></Nav>
       <main>
-        <ContactForm></ContactForm>
-        <Projects currentCategory={currentCategory}></Projects>
-        <About></About>
+        {!contactSelected ? (
+          <>
+            <About></About>
+            <Projects currentCategory={currentCategory}></Projects>
+          </>
+        ) : (
+          <ContactForm></ContactForm>
+        )}
       </main>
     </div>
   );
