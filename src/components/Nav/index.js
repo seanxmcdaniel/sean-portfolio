@@ -20,9 +20,9 @@ function Nav(props) {
       <nav>
         <ul className="flex-row">
           <li className="mx-2">
-            <a data-testid="about" href="#about" onClick={() => {setContactSelected(false); setCurrentCategory(false)}}>
+            <span onClick={() => {setContactSelected(false); setCurrentCategory(false)}}>
               About Me
-            </a>
+            </span>
           </li>
           <li className={"mx-2"}>
             <span onClick={() => setContactSelected(true)}>
