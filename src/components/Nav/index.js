@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers'
 
 function Nav(props) {
@@ -7,7 +7,6 @@ function Nav(props) {
     categories = [],
     setCurrentCategory,
     currentCategory,
-    contactSelected,
     setContactSelected
   } = props;
 
@@ -21,7 +20,7 @@ function Nav(props) {
       <nav>
         <ul className="flex-row">
           <li className="mx-2">
-            <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
+            <a data-testid="about" href="#about" onClick={() => {setContactSelected(false); setCurrentCategory(false)}}>
               About Me
             </a>
           </li>
@@ -37,7 +36,6 @@ function Nav(props) {
                 }`}
               key={category.name}
             >
-              <a href='#projects'>
               <span
                 onClick={() => {
                   setCurrentCategory(category);
@@ -46,7 +44,6 @@ function Nav(props) {
               >
                 {capitalizeFirstLetter(category.name)}
               </span>
-              </a>
             </li>
           ))}
         </ul>

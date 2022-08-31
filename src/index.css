@@ -4,12 +4,12 @@ main {
   padding: 50px;
 }
 :root {
-  --primary: #F4D35E;
-  --secondary: #EE964B;
-  --tertiary: #F95738;
-  --light: #FAF0CA;
-  --dark: #0D3B66;
-  --darker: #111111;
+  --primary: #FF6B35;
+  --secondary: #F7C59F;
+  --tertiary: #1A659E;
+  --light: #EFEFD0;
+  --dark: #004E89;
+  --darker: black;
   --error-text: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
@@ -54,7 +54,7 @@ h6 {
 
 h1 {
   font-size: 3.25rem;
-  color: var(--dark);
+  color: var(--primary);
 }
 
 h2 {
@@ -83,7 +83,7 @@ p {
     font-weight: 300;
     font-size: 1.5rem;
     margin-top: 0;
-    color: var(--primary)
+    color: var(--darker)
   }
 
 a {
@@ -345,7 +345,7 @@ height: 100%;
 
 .ol-text p {
   font-size: 1vw;
-  color: var(--light);
+  color: white;
 }
 
 .overlay {
@@ -353,7 +353,7 @@ height: 100%;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color:var(--secondary);
+  background-color:var(--dark);
   opacity: 90%;
   overflow: hidden;
   width: 100%;

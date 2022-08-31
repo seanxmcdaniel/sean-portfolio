@@ -24,7 +24,7 @@ function App() {
     }
   ]);
 
-  const [currentCategory, setCurrentCategory] = useState(categories[0]);
+  const [currentCategory, setCurrentCategory] = useState(false);
 
   return (
     <div>
@@ -36,14 +36,21 @@ function App() {
         setContactSelected={setContactSelected}
       ></Nav>
       <main>
-        {!contactSelected ? (
+
+        { contactSelected ? (
           <>
-            <About></About>
-            <Projects currentCategory={currentCategory}></Projects>
+          <ContactForm></ContactForm>
+          </>
+        ) : currentCategory ? (
+          <>
+          <Projects currentCategory = {currentCategory}></Projects>
           </>
         ) : (
-          <ContactForm></ContactForm>
+          <>
+          <About></About>
+          </>
         )}
+
       </main>
     </div>
   );
