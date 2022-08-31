@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers'
 
 function Nav(props) {
@@ -24,7 +24,7 @@ function Nav(props) {
               About Me
             </span>
           </li>
-          <li className={"mx-2"}>
+          <li className="mx-2">
             <span onClick={() => setContactSelected(true)}>
               Contact
             </span>

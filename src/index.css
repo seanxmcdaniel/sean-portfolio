@@ -41,11 +41,7 @@ body {
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2 {
   font-family: aw-conqueror-didot, serif;
   font-style: bold;
   margin: 5px 0;
@@ -59,22 +55,6 @@ h1 {
 
 h2 {
   font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.75rem;
-}
-
-h4 {
-  font-size: 1.5rem;
-}
-
-h5 {
-  font-size: 1.25rem;
-}
-
-h6 {
-  font-size: 1rem;
 }
 
 p {
@@ -100,10 +80,6 @@ header {
   font-size: 3.25rem;
 }
 
-header a {
-  color: var(--light);
-}
-
 button {
   font-size: 1rem;
   text-decoration: none;
@@ -124,17 +100,8 @@ button:hover {
   opacity: .8;
 }
 
-button[disabled] {
-  cursor: default;
-  opacity: .8;
-}
-
 img {
   max-width: 100%;
-}
-
-span[role="img"] {
-  cursor: default;
 }
 
 form {
@@ -162,10 +129,6 @@ li {
   font-weight: 200;
 }
 
-nav a:hover {
-  text-decoration: none;
-}
-
 nav  li {
   padding: 10px;
   cursor: pointer;
@@ -178,12 +141,6 @@ textarea {
 	padding: 5px;
 }
 
-.container {
-  width: 92%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .flex-row {
   display: flex;
   flex-wrap: wrap;
@@ -192,14 +149,6 @@ textarea {
 .flex-shrink {
   display: flex;
   flex-shrink:inherit
-}
-
-.space-between {
-  justify-content: space-between;
-}
-
-.flex-end {
-  justify-content: flex-end;
 }
 
 .mx-1 {
@@ -250,41 +199,10 @@ textarea {
   padding-bottom: var(--spacing-two);
 }
 
-.card {
-  width: 25%;
-  text-align: center;
-}
-
 .img-thumbnail {
   width: auto;
   height: 100%;
   cursor: pointer;
-}
-
-.modalBackdrop {
-	background: rgba(0, 0, 0, .65);
-	bottom: 0;
-	left: 0;
-	overflow: auto;
-	position: fixed;
-	right: 0;
-	top: 0;
-	z-index: 1;
-}
-
-.modalContainer {
-	background: var(--darker);
-	border-radius: 5px;
-	max-width: 100%;
-	margin: 50px auto;
-	padding: 15px;
-	width: 960px;
-}
-
-.modalTitle {
-	font-size: 18px;
-	font-weight: 600;
-	margin-bottom: 25px;
 }
 
 button {
@@ -307,10 +225,6 @@ a {
 	margin-left: -2px;
 	margin-right: -2px;
 	text-decoration: none;
-}
-
-.navActive {
-  color: var(--secondary);
 }
 
 .proj-image {
