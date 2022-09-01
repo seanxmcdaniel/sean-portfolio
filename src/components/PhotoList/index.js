@@ -39,7 +39,7 @@ const PhotoList = ({ category }) => {
       category: 'full-stack',
       description: 'A full-stack application that allows a user to post, update, and delete notes.',
       tech: 'HTML, CSS, JavaScript, Node.js, Express.js',
-      link: 'https://github.com/seanxmcdaniel/Note-Taker',
+      link: 'https://gentle-woodland-76298.herokuapp.com/',
       repo: 'https://github.com/seanxmcdaniel/Note-Taker'
     },
     {

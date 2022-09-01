@@ -11,7 +11,7 @@ function About() {
         <p>
           I am a hard-working and self-motivated web developer 
           certified through Michigan State University. Throughout 
-          my coding bootcamp journey I gained experience in front-end, 
+          my coding bootcamp journey, I gained experience in front-end, 
           back-end, and full-stack web development. I acquired skills 
           in HTML, CSS, JavaScript, React, Node.js, MySQL, Express.js, 
           MongoDB and more. I am eager to expand my knowledge and grow 

@@ -30,11 +30,6 @@ function Nav(props) {
               Resume
             </span>
           </li>
-          <li className="mx-2">
-            <span onClick={() => setContactSelected(true)}>
-              Contact
-            </span>
-          </li>
           {categories.map((category) => (
             <li
               className={`mx-1 ${
@@ -52,6 +47,11 @@ function Nav(props) {
               </span>
             </li>
           ))}
+          <li className="mx-2">
+            <span onClick={() => setContactSelected(true)}>
+              Contact
+            </span>
+          </li>
         </ul>
       </nav>
     </header>
