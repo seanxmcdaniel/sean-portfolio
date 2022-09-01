@@ -286,6 +286,7 @@ height: 100%;
 
 .mainPhoto {
   height: 500px;
+  padding: 20px;
   width: auto;
   margin-left: auto;
   display: block;
