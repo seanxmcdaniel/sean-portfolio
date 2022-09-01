@@ -12,6 +12,8 @@
   
 My portfolio was created using 'create-react-app'. It includes some of the projects I have developed and collaborated on, as well as a resume section where you can download my resume, a contact section, and an 'about me' section.
 
+![porfolio screenshot](https://user-images.githubusercontent.com/102200863/188000225-5cf39b7e-8682-476a-9f5f-bfa42bf0a0ba.png)
+
   ## Usage
   
   Each of the photos of my projects will take you to the respective deployed application. You can also view each project's repository by clicking 'GitHub Repository' on the overlay of any of the project images. 
