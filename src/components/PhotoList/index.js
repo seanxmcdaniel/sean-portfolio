@@ -50,6 +50,23 @@ const PhotoList = ({ category }) => {
       link: 'https://seanxmcdaniel.github.io/workday-app/',
       repo: 'https://github.com/seanxmcdaniel/workday-app'
     },
+    {
+      name: 'E-Commerce Back-End',
+      category: 'back-end',
+      description: 'A fully opperational back end for an online store, using object-relational mapping. Create, read, update, and delete data from an e-commerce database.',
+      tech: 'JavaScript, Node.js, MySQL, Express.js',
+      link: 'https://github.com/seanxmcdaniel/E-Commerce',
+      repo: 'https://github.com/seanxmcdaniel/E-Commerce'
+    },
+    {
+      name: 'Social Network API',
+      category: 'back-end',
+      description: 'The Social Media API is a social media database that uses MongoDB to handle large amounts of unstructured data.',
+      tech: 'JavaScript, Node.js, MongoDB, Express.js, Moment',
+      link: 'https://github.com/seanxmcdaniel/social-network-api',
+      repo: 'https://github.com/seanxmcdaniel/social-network-api'
+      
+    }
 
   ])
 

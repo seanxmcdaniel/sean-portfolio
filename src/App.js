@@ -18,6 +18,10 @@ function App() {
       description: 'Thank you for taking a look at my portfolio! Here are some of the front-end applications I developed throughout my coding bootcamp. To visit the deployed application for any of these projects, click anywhere on the photo. To view the GitHub repositories, click "GitHub Repository".'
     },
     {
+      name: 'back-end',
+      description: 'Thank you for taking a look at my portfolio! Here are some of the front-end applications I developed throughout my coding bootcamp. To view the GitHub repositories, click "GitHub Repository".'
+    },
+    {
       name: 'full-stack',
       description: 'Thank you for taking a look at my portfolio! Here are some of the full-stack applications I developed throughout my coding bootcamp. To visit the deployed application for any of these projects, click anywhere on the photo. To view the GitHub repositories, click "GitHub Repository".'
     }
