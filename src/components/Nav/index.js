@@ -14,7 +14,7 @@ function Nav(props) {
   return (
     <header className="flex-row px-1">
       <h2 className='headername'>
-        <a data-testid="link" href="/">
+        <a data-testid="link" href="/sean-portfolio">
           Sean McDaniel
         </a>
       </h2>
