@@ -3,24 +3,23 @@ import About from './components/About';
 import Nav from './components/Nav';
 import Projects from './components/Projects';
 import ContactForm from './components/Contact';
+import Footer from './components/Footer';
+import Resume from './components/Resume';
 
 
 function App() {
 
   const [contactSelected, setContactSelected] = useState(false);
+  const [resumeSelected, setResumeSelected] = useState(false)
 
   const [categories] = useState([
     {
       name: 'front-end',
-      description: 'A list of front end, back end, and full stack projects completed throughout my MSU coding bootcamp.'
-    },
-    {
-      name: 'back-end',
-      description: 'A list of back-end projects created throughout my MSU coding bootcamp.'
+      description: 'Thank you for taking a look at my portfolio! Here are some of the front-end applications I developed throughout my coding bootcamp. To visit the deployed application for any of these projects, click anywhere on the photo. To view the GitHub repositories, click "GitHub Repository".'
     },
     {
       name: 'full-stack',
-      description: 'A list of full stack projects I created throughout my MSU coding bootcamp. '
+      description: 'Thank you for taking a look at my portfolio! Here are some of the full-stack applications I developed throughout my coding bootcamp. To visit the deployed application for any of these projects, click anywhere on the photo. To view the GitHub repositories, click "GitHub Repository".'
     }
   ]);
 
@@ -34,6 +33,8 @@ function App() {
         currentCategory={currentCategory}
         contactSelected={contactSelected}
         setContactSelected={setContactSelected}
+        resumeSelected={resumeSelected}
+        setResumeSelected={setResumeSelected}
       ></Nav>
       <main>
 
@@ -45,13 +46,17 @@ function App() {
           <>
           <Projects currentCategory = {currentCategory}></Projects>
           </>
+        ) : resumeSelected ? (
+          <>
+          <Resume></Resume>
+          </>
         ) : (
           <>
           <About></About>
           </>
         )}
-        
       </main>
+      <Footer></Footer>
     </div>
   );
 }

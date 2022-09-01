@@ -7,43 +7,49 @@ const PhotoList = ({ category }) => {
       category: 'full-stack',
       description: 'A budget tracker application that allows for offline access and functionality.',
       tech: 'JavaScript, Node.js, Express.js, MongoDB, Mongoose',
-      link: 'https://github.com/seanxmcdaniel/budget-tracker'
+      link: 'https://github.com/seanxmcdaniel/budget-tracker',
+      repo: 'https://github.com/seanxmcdaniel/budget-tracker'
     },
     {
       name: 'Coding Quiz',
       category: 'front-end',
       description: 'A front-end coding quiz game built with HTML, CSS, and JavaScript. ',
       tech: 'HTML, CSS, JavaScript',
-      link: 'https://seanxmcdaniel.github.io/coding-quiz/'
+      link: 'https://seanxmcdaniel.github.io/coding-quiz/',
+      repo: 'https://github.com/seanxmcdaniel/game-time-mlb'
     },
     {
       name: 'Game Time MLB',
       category: 'front-end',
       description: 'A front-end application that uses web APIs and local storage to show you stats and schedules for your favorite MLB teams.',
       tech: 'HTML, CSS, JavaScript',
-      link: 'https://seanxmcdaniel.github.io/game-time-mlb/'
+      link: 'https://seanxmcdaniel.github.io/game-time-mlb/',
+      repo: 'https://github.com/seanxmcdaniel/game-time-mlb'
     },
     {
       name: 'Happening Place',
       category: 'full-stack',
       description: 'A full-stack web application that allows a user to sign up, log in, and post upcoming events to an event blog.',
       tech: 'HTML, CSS, JavaScript, MySQL, Express.js, Node.js, Handlebars',
-      link: 'https://salty-lowlands-78543.herokuapp.com/'
+      link: 'https://salty-lowlands-78543.herokuapp.com/',
+      repo: 'https://github.com/seanxmcdaniel/events-blog'
     },
     {
       name: 'Note Taker',
       category: 'full-stack',
       description: 'A full-stack application that allows a user to post, update, and delete notes.',
       tech: 'HTML, CSS, JavaScript, Node.js, Express.js',
-      link: 'https://github.com/seanxmcdaniel/Note-Taker'
+      link: 'https://github.com/seanxmcdaniel/Note-Taker',
+      repo: 'https://github.com/seanxmcdaniel/Note-Taker'
     },
     {
       name: 'Workday App',
       category: 'front-end',
       description: 'A front-end application that allows an employee to keep up with their work schedule.',
       tech: 'HTML, CSS, JavaScript, JQuery, Bootstrap',
-      link: 'https://seanxmcdaniel.github.io/workday-app/'
-    }
+      link: 'https://seanxmcdaniel.github.io/workday-app/',
+      repo: 'https://github.com/seanxmcdaniel/workday-app'
+    },
 
   ])
 
@@ -65,6 +71,7 @@ const PhotoList = ({ category }) => {
                   <h1>{image.name}</h1>
                   <p>{image.description}</p>
                   <p>{image.tech}</p>
+                  <a href={image.repo} target='blank'>GitHub Repository</a>
                 </div>
               </div>
             </a>

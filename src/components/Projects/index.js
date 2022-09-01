@@ -12,4 +12,5 @@ function Projects(props) {
     </section>
   );
 }
+
 export default Projects;

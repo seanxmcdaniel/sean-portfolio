@@ -7,7 +7,8 @@ function Nav(props) {
     categories = [],
     setCurrentCategory,
     currentCategory,
-    setContactSelected
+    setContactSelected,
+    setResumeSelected
   } = props;
 
   return (
@@ -20,8 +21,13 @@ function Nav(props) {
       <nav>
         <ul className="flex-row">
           <li className="mx-2">
-            <span onClick={() => {setContactSelected(false); setCurrentCategory(false)}}>
+            <span onClick={() => { setContactSelected(false); setCurrentCategory(false); setResumeSelected(false);}}>
               About Me
+            </span>
+          </li>
+          <li className="mx-2">
+            <span onClick={() => { setContactSelected(false); setCurrentCategory(false); setResumeSelected(true); }}>
+              Resume
             </span>
           </li>
           <li className="mx-2">
@@ -51,5 +57,5 @@ function Nav(props) {
     </header>
   );
 }
-  
-  export default Nav;
+
+export default Nav;
