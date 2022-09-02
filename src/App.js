@@ -19,7 +19,7 @@ function App() {
     },
     {
       name: 'back-end',
-      description: 'Here are some of the front-end applications I developed throughout my coding bootcamp. To view the GitHub repositories, click "GitHub Repository".'
+      description: 'Here are some of the back-end applications I developed throughout my coding bootcamp. To view the GitHub repositories, click "GitHub Repository".'
     },
     {
       name: 'full-stack',
