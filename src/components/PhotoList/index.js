@@ -3,6 +3,14 @@ import React, { useState } from 'react';
 const PhotoList = ({ category }) => {
   const [photos] = useState([
     {
+      name: 'Connect Fitness',
+      category: 'full-stack',
+      description: "A full-stack application that allows users to login and create fitness routines and post their diet, as well as view others' posts.",
+      tech: 'React, JavaScript, CSS, Node.js, MongoDB, Material UI, GraphQL',
+      link: 'https://radiant-chamber-74647.herokuapp.com/',
+      repo: 'https://github.com/ancosta993/Project-3-will-rename'
+    },
+    {
       name: 'Budget Tracker',
       category: 'full-stack',
       description: 'A budget tracker application that allows for offline access and functionality.',
