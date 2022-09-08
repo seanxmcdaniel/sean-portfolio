@@ -1,23 +1,24 @@
 {
   "files": {
     "main.css": "/sean-portfolio/static/css/main.22b43c0f.css",
-    "main.js": "/sean-portfolio/static/js/main.5bca9e67.js",
+    "main.js": "/sean-portfolio/static/js/main.b110b399.js",
     "static/js/787.6298002a.chunk.js": "/sean-portfolio/static/js/787.6298002a.chunk.js",
-    "static/media/1.png": "/sean-portfolio/static/media/1.0baae4846f710bf0fc03.png",
+    "static/media/2.png": "/sean-portfolio/static/media/2.dd6a87921dc32f88260f.png",
+    "static/media/0.png": "/sean-portfolio/static/media/0.7b2d555be33aee09ecc9.png",
     "static/media/mainPhoto.jpg": "/sean-portfolio/static/media/mainPhoto.f6f6fe95e3789780b11e.jpg",
-    "static/media/0.png": "/sean-portfolio/static/media/0.0f6072c568b05e2acc07.png",
-    "static/media/resume.zip": "/sean-portfolio/static/media/resume.da268f67523c55bc996f.zip",
-    "static/media/2.png": "/sean-portfolio/static/media/2.9cbe9c253dedc469bbda.png",
+    "static/media/1.png": "/sean-portfolio/static/media/1.0f6072c568b05e2acc07.png",
+    "static/media/SeanMcDaniel-Resume.pdf": "/sean-portfolio/static/media/SeanMcDaniel-Resume.436d9c381936d434d1b7.pdf",
+    "static/media/3.png": "/sean-portfolio/static/media/3.9cbe9c253dedc469bbda.png",
     "static/media/github.png": "/sean-portfolio/static/media/github.a5db7b9c174cbca7e341.png",
     "static/media/linkedin.png": "/sean-portfolio/static/media/linkedin.bb933f9d0028dbf4297c.png",
     "static/media/twitter.png": "/sean-portfolio/static/media/twitter.117e77186386dd8c3a97.png",
     "index.html": "/sean-portfolio/index.html",
     "main.22b43c0f.css.map": "/sean-portfolio/static/css/main.22b43c0f.css.map",
-    "main.5bca9e67.js.map": "/sean-portfolio/static/js/main.5bca9e67.js.map",
+    "main.b110b399.js.map": "/sean-portfolio/static/js/main.b110b399.js.map",
     "787.6298002a.chunk.js.map": "/sean-portfolio/static/js/787.6298002a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.22b43c0f.css",
-    "static/js/main.5bca9e67.js"
+    "static/js/main.b110b399.js"
   ]
 }
